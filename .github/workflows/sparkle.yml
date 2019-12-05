@@ -1,0 +1,12 @@
+name: CI
+
+on: [watch]
+
+jobs:
+  sparkle:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Call IFTTT to trigger lights
+      run: curl -X POST https://maker.ifttt.com/trigger/do_hook/with/key/${{ secrets.IFTTT_KEY }}
