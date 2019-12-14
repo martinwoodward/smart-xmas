@@ -19,7 +19,7 @@ A simple project showing you how to easily control smart devices in your home fr
 
 First of all set up your smart power strip using instructions from your vendor. Lots of the inexpensive unbranded smart devices are OEM devices making using of the [Tuya](http://tuya.com/) cloud network. (The 'Smart Life' application used by many of these is a particularly common front-end to the Tuya API). Regardless of the provider, look for compatibility with [IFTTT](https://ifttt.com/) as that is how we are going to drive it.
 
-Nearly all the applications will allow you to configure scenes or automation that happens on a trigger or when manually triggered (i.e. 'tap to run').  I created a scene called `TreeAnimate` which simply switches on all the power, waits 30 seconds and then switches it all off again. However depending on your smart device you can do a lot more if you wanted, for example adjust the color of your RGB lighting, switch on a lava lamp or confetti filled leaf-blower etc.
+Nearly all the applications will allow you to configure scenes or automation that happens on a trigger or when manually triggered (i.e. 'tap to run').  I created a scene called `TreeAnimate` which simply switches on all the power to the power strip, waits 30 seconds and then switches it all off again. However depending on your smart device you can do a lot more if you wanted, for example adjust the color of your RGB lighting, switch on a lava lamp or confetti filled leaf-blower etc.
 
 ![Smartlife Scene Configuration](/images/smartlife-scene.png)
 
@@ -65,7 +65,7 @@ The reason we're using IFTTT is that most smart device manufacturers already int
 
  2. Then in the project select 'Actions' and select 'New worfflow'.
 
- 3. In the top right hand side, select 'Set up a workflow yourself'. Name the file something meaningful (I called mine `sparkle.yml`). The workflow itself is very simple. It simply uses curl to trigger the webhook when someone stars the repo in GitHub.
+ 3. In the top right hand side, select 'Set up a workflow yourself'. Name the file something meaningful (I called mine [`sparkle.yml`](https://github.com/martinwoodward/smart-xmas/blob/master/.github/workflows/sparkle.yml)). The workflow itself is very simple. It simply uses curl to trigger the webhook when someone stars the repo in GitHub.
 
  ```yaml
 name: sparkle
