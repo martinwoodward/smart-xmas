@@ -1,6 +1,6 @@
 name: sparkle
 
-on: [watch]
+on: [watch, workflow_dispatch]
 
 jobs:
   sparkle:
