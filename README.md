@@ -4,8 +4,6 @@
 
 A simple project showing you how to easily control smart devices in your home from [GitHub Actions](https://github.com/features/actions) and put a bit of :sparkles: into your repos.
 
-**PSA:** My tree is currently switched off, but will return next December for sure.
-
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=xu5EgEFW4is
 " target="_blank"><img src="http://img.youtube.com/vi/xu5EgEFW4is/0.jpg" 
 alt="YouTube video tutorial" width="540" height="360" border="2" /></a>
